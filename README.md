@@ -1,5 +1,10 @@
-# Outputs:
+# Updating ABL serial with ROP:
 
+When ran this notebook will load ABL and attempt to update the device's serial number via ROP chain to call memmove(). Derived from eShard's https://github.com/eshard/pixel6-boot/blob/main/run_abl_public.ipynb whilst following along with https://eshard.com/posts/pixel6_bootloader
+
+# Output
+
+```
 partition misc not found
 failed to read misc(vendor) partition -2
 [   0.000000] [E] [PXL] could not get charger state -27
@@ -222,3 +227,4 @@ SP: ffff000090700090
 Checking serial: EVIL_SERIAL_ROP
 
 >>> PC = 0x0
+```
